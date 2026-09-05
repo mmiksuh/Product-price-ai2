@@ -1,14 +1,12 @@
-# Product Price AI V2
+# Product Price AI V3
 
-MVP/V2: kuvantunnistus, verkkopohjainen vertailuhaku, arvon arvio, OSTA/HARKITSE/ÄLÄ OSTA,
-SQLite-portfolio, dashboard ja Excel-vienti.
+AI-jälleenmyyntiarvioija: useita tuotekuvia, tarkka visuaalinen tunnistus, mallinumero/SKU, verkkohaku, vertailut, arvioitu jälleenmyyntiarvo, myyntiaika, maksimihinta ostolle, riskit, ROI ja Excel-vienti.
 
-## Asennus
-```bash
-pip install -r requirements.txt
-streamlit run app.py
+## Streamlit Secrets
+Lisää sovelluksen Secrets-kohtaan:
+
+```toml
+OPENAI_API_KEY = "sk-..."
 ```
-Syötä API-avain sivupalkissa.
 
-Huom: hintojen luotettavuus riippuu saatavilla olevista verkkolähteistä. Markkinapaikkojen
-käyttöehdot/API:t pitää tarkistaa ennen kaupallista käyttöä.
+Oletusmalli on `gpt-5.6-luna`; sen voi vaihtaa sivupalkista.
